@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {% extends 'base.html' %}
+
+  {% block content %}
+  <p style="color: green;">{{name}}! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nobis saepe aut qui officia, excepturi dolor ut nisi laudantium vitae odit iure voluptate veritatis provident quisquam repudiandae molestias eius suscipit!</p>
+
+  <form action="add">
+    <input type="text" name="num1" placeholder="Enter the first number"> <br>
+    <input type="text" name="num2" placeholder="Enter the second number">
+    <input type="submit">
+  </form>
+  {% endblock %}
+</body>
+</html>
